@@ -7,35 +7,44 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/e1a1eab11d.js" crossorigin="anonymous"></script>
+
     <title>Document</title>
     <style>
       .nav-link {
         color: white;
         text-decoration: none;
       }
+
       .carousel-item > img {
         height: 550px;
       }
+
       .content {
         position: absolute;
         top: 40%;
         left: 30%;
         background-color: rgba(152, 226, 255, 0.562);
       }
+
       .card-img-top {
         width: 100%;
         height: 200px;
         padding: 50px 150px;
       }
+
       .card-service {
         height: 336px;
       }
+
       .col {
         padding: 0;
       }
+
       .cat {
         padding: 50px 180px;
       }
+
       .header_servives::before {
         content: "";
         width: 5rem;
@@ -44,8 +53,49 @@
         display: inline-block;
         transform: translate(220%, -50px);
       }
+
+      .background {
+        background-image: url(.//assets/imgs/background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+      }
+      .margin-top {
+        margin-top: 40%;
+      }
+      .flexcentre {
+        display: flex;
+        justify-content: center;
+      }
+      .header_servives1::before {
+        content: "";
+        width: 5rem;
+        height: 5px;
+        background-color: red;
+        display: inline-block;
+        transform: translate(190%, -50px);
+      }
+      .grey {
+        color: grey;
+      }
+      .link {
+        text-decoration: none;
+        color: white;
+      }
+      .hover-red:hover {
+        color: red;
+      }
+      .importantlink::after {
+        content: "";
+        width: 2rem;
+        height: 2px;
+        background-color: red;
+        display: inline-block;
+        transform: translate(-340%, 20px);
+      }
     </style>
   </head>
+
   <body>
     <div class="container-fluid bg-dark">
       <div class="container bg-dark text-white d-flex">
@@ -57,16 +107,16 @@
         <!-- Menu Right -->
         <ul class="nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link">fb</a>
+            <a class="nav-link">Facebook</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">twtr</a>
+            <a class="nav-link" href="#">Twitter</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">pinterest</a>
+            <a class="nav-link" href="#">Pinterest</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">gmail</a>
+            <a class="nav-link">Gmail</a>
           </li>
         </ul>
       </div>
@@ -220,16 +270,238 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="container-fluid background">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="row margin-top">
+              <div class="col-5 align-self-center align-items-center flexcentre"><img src="./assets/imgs/handshake.png" alt="" /></div>
+              <div class="col-7">
+                <p class="text-light">Happy Customers</p>
+                <p class="text-light pacifio fs-2">210</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="row margin-top">
+              <div class="col-5 align-self-center align-items-center flexcentre"><img src="./assets/imgs/happiness.png" alt="" /></div>
+              <div class="col-7">
+                <p class="text-light">Customer Satisfaction</p>
+                <p class="text-light pacifio fs-2">100%</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="row margin-top">
+              <div class="col-5 align-self-center align-items-center flexcentre"><img src="./assets/imgs/house.png" alt="" /></div>
+              <div class="col-7">
+                <p class="text-light">Pet Hosted</p>
+                <p class="text-light pacifio fs-2">95</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="row margin-top">
+              <div class="col-5 align-self-center align-items-center flexcentre"><img src="./assets/imgs/medal.png" alt="" /></div>
+              <div class="col-7">
+                <p class="text-light">Awards Winning</p>
+                <p class="text-light pacifio fs-2">23</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="container-fluid bg-danger">
+    <div class="container mt-5">
       <div class="row">
         <div class="col">
-          <img src="./assets/imgs/01_Index-Recovered-Recovered-Recovered.png" class="card-img-top"  />
+          <h3>Our pet health care System</h3>
+          <p>The doctors and staff at Pet Care Veterinary Hospital have years of experience treating a variety of reptiles including Bearded Dragons, Geckos, Snakes and Tortoises. Our hospital offers physical exams, vaccinations, nutrition, behavioral and environmental enrichment information for your pet ferret.</p>
+          <div class="row">
+            <div class="col">
+              <img src="./assets/imgs/training.png" alt="" />
+              <br />
+              <h6>HOME DELIVERY</h6>
+            </div>
+            <div class="col">
+              <img src="./assets/imgs/cat2.png" alt="" />
+              <br />
+              <h6>QUALITY PET</h6>
+            </div>
+          </div>
         </div>
-        <div class="col"><img src="./assets/imgs/happiness.png" class="card-img-top"   /></div>
-        <div class="col"><img src="./assets/imgs/house.png" class="card-img-top" /></div>
-        <div class="col"><img src="./assets/imgs/medal.png" class="card-img-top" /></div>
+
+        <div class="col">
+          <div class="row">
+            <h3>Doing the right thing, Discover Our Products</h3>
+            <p>Our veterinarians and staff understand the importance of the special bond you share with your pet and are dedicated to providing the best that modern veterinary care has to offer</p>
+          </div>
+          <div class="row mt-3" style="border: 1px dotted rgba(207, 111, 111, 0.479)">
+            <div style="display: flex; justify-content: space-between; padding: 15px">
+              <h3>Trusted Pet Sitters Across the Country</h3>
+              <div class="btn-class">
+                <button class="btn" id="btn1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample1" aria-expanded="false" aria-controls="collapseWidthExample1">
+                  <i class="fa-solid fa-circle-plus" style="color: red; background-color: white; font-size: 25px"></i>
+                </button>
+                <button class="btn" id="btn2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample1" aria-expanded="false" aria-controls="collapseWidthExample1"><i class="fa-solid fa-circle-minus" style="color: red; background-color: white; font-size: 25px"></i></button>
+              </div>
+            </div>
+            <div>
+              <div class="collapse collapse-horizontal" id="collapseWidthExample1">
+                <div class="card card-body" style="width: 100%">The perfect harmony between innovation and creativity, our bathroom tiles are produced in compliance with the international standards. High quality 20mm thick porcelain tiles that can be laid on pedestals,</div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3" style="border: 1px dotted rgba(207, 111, 111, 0.479)">
+            <div style="display: flex; justify-content: space-between; padding: 15px">
+              <h3>What can I offer my bird as a treat?</h3>
+              <div class="btn-class">
+                <button class="btn" id="btn3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample2">
+                  <i class="fa-solid fa-circle-plus" style="color: red; background-color: white; font-size: 25px"></i>
+                </button>
+                <button class="btn" id="btn4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample2"><i class="fa-solid fa-circle-minus" style="color: red; background-color: white; font-size: 25px"></i></button>
+              </div>
+            </div>
+            <div>
+              <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+                <div class="card card-body" style="width: 100%">The perfect harmony between innovation and creativity, our bathroom tiles are produced in compliance with the international standards. High quality 20mm thick porcelain tiles that can be laid on pedestals,</div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3" style="border: 1px dotted rgba(207, 111, 111, 0.479)">
+            <div style="display: flex; justify-content: space-between; padding: 15px">
+              <h3>When your rabbit stops eating</h3>
+              <div class="btn-class">
+                <button class="btn" id="btn5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample3" aria-expanded="false" aria-controls="collapseWidthExample3">
+                  <i class="fa-solid fa-circle-plus" style="color: red; background-color: white; font-size: 25px"></i>
+                </button>
+                <button class="btn" id="btn6" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample3" aria-expanded="false" aria-controls="collapseWidthExample3"><i class="fa-solid fa-circle-minus" style="color: red; background-color: white; font-size: 25px"></i></button>
+              </div>
+            </div>
+            <div>
+              <div class="collapse collapse-horizontal" id="collapseWidthExample3">
+                <div class="card card-body" style="width: 100%">The perfect harmony between innovation and creativity, our bathroom tiles are produced in compliance with the international standards. High quality 20mm thick porcelain tiles that can be laid on pedestals,</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <h1 class="text-center header_servives1 mt-5">Latest News</h1>
+          <div class="row gx-5">
+            <div class="col-4">
+              <div class="card" style="width: 100%">
+                <img src="./assets/imgs/sunnydog.jpg" class="card-img-top p-0" style="height: 250px" />
+                <div class="card-body">
+                  <h5 class="card-title hover-red">Dogs Having The Summer Ever</h5>
+                  <p class="card-text grey">Summer is a time of vacations and travel or simply relaxing at home for a staycation As much as we would love for our dogs to accompany</p>
+                  <p class="card-text grey">13 /04 /17</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card" style="width: 100%">
+                <img src="./assets/imgs/sad cat.jpg" class="card-img-top p-0" style="height: 250px" />
+                <div class="card-body">
+                  <h5 class="card-title hover-red" style="white-space: nowrap">The cat feeling sad , when she was alone</h5>
+                  <p class="card-text grey">Summer is a time of vacations and travel or simply relaxing at home for a staycation As much as we would love for our dogs to accompany</p>
+                  <p class="card-text grey">15 /04 /17</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card" style="width: 100%">
+                <img src="./assets/imgs/snowcat.jpg" class="card-img-top p-0" style="height: 250px" />
+                <div class="card-body">
+                  <h5 class="card-title hover-red">Cat Having nice moment the winter</h5>
+                  <p class="card-text grey">Summer is a time of vacations and travel or simply relaxing at home for a staycation As much as we would love for our dogs to accompany</p>
+                  <p class="card-text grey">19 /04 /17</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5 mb-5 d-flex align-items-center">
+            <div class="col-3 d-flex justify-content-center"><img src="./assets/imgs/logo1.png" alt="" /></div>
+            <div class="col-3 d-flex justify-content-center"><img src="./assets/imgs/logo2.png" alt="" /></div>
+            <div class="col-3 d-flex justify-content-center"><img src="./assets/imgs/logo3.png" alt="" /></div>
+            <div class="col-3 d-flex justify-content-center"><img src="./assets/imgs/logo4.png" alt="" /></div>
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="container-fluid bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 mt-5">
+            <img src="./assets/imgs/mypet.png" />
+            <p class="text-white">myPet was established in 2017 by Pet business veterans, Rod Davies and Matthew Levington, the journey began when founders Matthew Levington and Rod Davies, met up in 2017 over a beer</p>
+            <p class="text-white" style="letter-spacing: 40px">
+              <a style="text-decoration: none; color: white" href="#"><i class="hover-red fa-brands fa-facebook-f"></i> </a>
+              <a style="text-decoration: none; color: white" href="#"><i class="fa-brands fa-instagram hover-red"></i></a>
+              <a style="text-decoration: none; color: white" href="#"><i class="fa-brands fa-twitter hover-red"></i></a>
+              <a style="text-decoration: none; color: white" href="#"><i class="fa-solid fa-basketball hover-red"></i></a>
+            </p>
+            <br />
+            <span class="text-white px-2">
+              <a class="hover-red link" href="#">Privacy Policy</a>
+            </span>
+            <span class="text-white px-3" style="border-left: 1px solid grey">
+              <a class="hover-red link" href="">Legal Policy</a>
+            </span>
+          </div>
+          <div class="col-4 mt-5">
+            <p class="text-white importantlink">Important Links</p>
+            <div class="col-6">
+              <ul style="list-style-type: none">
+                <li><a href="#">Support</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Performance</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Pet Health Food</a></li>
+              </ul>
+            </div>
+            <div class="col-6"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#btn2").hide();
+      $("#btn1").click(function () {
+        $("#btn2").show();
+        $("#btn1").hide();
+      });
+      $("#btn2").click(function () {
+        $("#btn1").show();
+        $("#btn2").hide();
+      });
+    });
+    $(document).ready(function () {
+      $("#btn4").hide();
+      $("#btn3").click(function () {
+        $("#btn4").show();
+        $("#btn3").hide();
+      });
+      $("#btn4").click(function () {
+        $("#btn3").show();
+        $("#btn4").hide();
+      });
+    });
+    $(document).ready(function () {
+      $("#btn6").hide();
+      $("#btn5").click(function () {
+        $("#btn6").show();
+        $("#btn5").hide();
+      });
+      $("#btn6").click(function () {
+        $("#btn5").show();
+        $("#btn6").hide();
+      });
+    });
+  </script>
 </html>
