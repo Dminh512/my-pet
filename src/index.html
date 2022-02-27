@@ -24,7 +24,8 @@
         position: absolute;
         top: 40%;
         left: 30%;
-        background-color: rgba(152, 226, 255, 0.562);
+        z-index: 99;
+        color: white;
       }
 
       .card-img-top {
@@ -93,67 +94,125 @@
         display: inline-block;
         transform: translate(-340%, 20px);
       }
+      .importantlink2::after {
+        content: "";
+        width: 2rem;
+        height: 2px;
+        background-color: red;
+        display: inline-block;
+        transform: translate(-295%, 20px);
+      }
+      .footer-white {
+        color: #c0c0c0;
+      }
+      .footer-grey {
+        color: #ababab;
+      }
+      .black {
+        color: black;
+      }
+      .test {
+        position: relative;
+      }
+      .test::after {
+        content: "Hello";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        opacity: 0.4;
+        z-index: 1;
+      }
+      .blur {
+        opacity: 0.4;
+      }
+      .btn-outline-danger,
+      .btn-outline-primary {
+        font-weight: 900;
+        width: 150px;
+      }
     </style>
   </head>
 
   <body>
-    <div class="container-fluid bg-dark">
+    <div class="container-fluid bg-dark" style="height: 50px">
       <div class="container bg-dark text-white d-flex">
         <!-- Menu Left -->
-        <nav class="nav">
-          <a class="nav-link">FoodFarm, W 35th St, New York</a>
-          <a class="nav-link">mypet_info@gmail.com</a>
+        <nav class="nav mt-2">
+          <a class="nav-link hover-red"><i class="fa-solid fa-house"></i> FoodFarm, W 35th St, New York</a>
+          <a class="nav-link hover-red"> <i class="fa-solid fa-envelope"></i> mypet_info@gmail.com</a>
         </nav>
         <!-- Menu Right -->
-        <ul class="nav ms-auto">
+        <ul class="nav ms-auto mt-2">
           <li class="nav-item">
-            <a class="nav-link">Facebook</a>
+            <a class="nav-link hover-red"><i class="fa-brands fa-facebook"></i> Facebook</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Twitter</a>
+            <a class="nav-link hover-red" href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pinterest</a>
+            <a class="nav-link hover-red" href="#"><i class="fa-brands fa-pinterest"></i> Pinterest</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link">Gmail</a>
+          <li class="nav-item" style="display: inline-block">
+            <a class="nav-link hover-red"> <i class="fa-brands fa-glide-g"></i> Gmail </a>
           </li>
         </ul>
       </div>
     </div>
+    <div class="container-fluid bg-white">
+      <div class="row">
+        <div class="col-3"><img class="ms-5 mt-2" src="./assets/imgs/mypet.png" alt="" /></div>
+        <div class="col-8 mt-4 d-flex justify-content-evenly">
+          <a href="#" class="hover-red text-decoration-none black" style="font-weight: bold">HOME</a>
+          <a href="#" class="hover-red text-decoration-none black" style="font-weight: bold">SERVICES</a>
+          <a href="#" class="hover-red text-decoration-none black" style="font-weight: bold">GALLERY</a>
+          <a href="#" class="hover-red text-decoration-none black" style="font-weight: bold">ABOUT</a>
+          <a href="#" class="hover-red text-decoration-none black" style="font-weight: bold">SHOP</a>
+          <a href="#" class="hover-red text-decoration-none black" style="font-weight: bold">BLOG</a>
+          <a href="#" class="hover-red text-decoration-none black" style="font-weight: bold">CONTACT</a>
+          <i class="fa-solid fa-cart-plus hover-red" style="font-size: 30px"></i>
+        </div>
+        <div class="col-1">
+          <a href="#"> <i class="fa-solid fa-magnifying-glass text-white bg-danger" style="padding: 20px 10px; font-size: 40px; margin: auto"></i> </a>
+        </div>
+      </div>
+    </div>
+
     <div class="container-fluid">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./assets/imgs/dog1.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-item active test">
+            <img src="./assets/imgs/dog1.jpg" class="d-block w-100" />
             <div class="content text-center">
-              <h1>Love your Pet , Care Pet</h1>
+              <h1>Love your Pet, Care Pet</h1>
               <h6>With over 15 years of Experience</h6>
               <h3>Pet Care services and best quality Pet for your Home</h3>
               <div>
-                <button class="btn btn-outline-danger">Shop Now</button>
-                <button class="btn btn-outline-dark">Get Pet</button>
+                <button class="btn btn-outline-danger btn-lg">Shop Now</button>
+                <button class="btn btn-outline-primary btn-lg">Get Pet</button>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item test">
             <img src="./assets/imgs/dog2.jpg" class="d-block w-100" alt="..." />
             <div class="content text-center">
               <h1>Love your Pet , Care Pet</h1>
               <h6>With over 15 years of Experience</h6>
               <h3>Pet Care services and best quality Pet for your Home</h3>
-              <button class="btn btn-outline-danger">Shop Now</button>
-              <button class="btn btn-outline-dark">Get Pet</button>
+              <button class="btn btn-outline-danger btn-lg">Shop Now</button>
+              <button class="btn btn-outline-primary btn-lg">Get Pet</button>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item test">
             <img src="./assets/imgs/dog3.jpg" class="d-block w-100" alt="..." />
             <div class="content text-center">
               <h1>Love your Pet , Care Pet</h1>
               <h6>With over 15 years of Experience</h6>
               <h3>Pet Care services and best quality Pet for your Home</h3>
-              <button class="btn btn-outline-danger">Shop Now</button>
-              <button class="btn btn-outline-dark">Get Pet</button>
+              <button class="btn btn-outline-danger btn-lg">Shop Now</button>
+              <button class="btn btn-outline-primary btn-lg">Get Pet</button>
             </div>
           </div>
         </div>
@@ -215,7 +274,7 @@
         <div class="row g-4">
           <div class="col-6 col-xl-4">
             <div class="card text-center card-service">
-              <img src="" class="card-img-top" />
+              <img src="./assets/imgs/pic1.jpg" class="card-img-top" style="padding: 0" />
               <div class="card-body">
                 <h5 class="card-title text-danger">PET ADOPTION</h5>
                 <p class="card-text">Whether your pet needs a scratch around the ear, a face to lick or a place to play,</p>
@@ -224,7 +283,7 @@
           </div>
           <div class="col-6 col-xl-4">
             <div class="card text-center card-service">
-              <img src="" class="card-img-top" />
+              <img src="./assets/imgs/pic2.jpg" class="card-img-top" style="padding: 0" />
               <div class="card-body">
                 <h5 class="card-title">PET GROOMING</h5>
                 <p class="card-text">Best Friends Pet Care is the leader of the pack when it comes to the absolute best care for your cat or dog.</p>
@@ -234,7 +293,7 @@
           <div class="col-6 col-xl-4">
             <div class="card text-center card-service">
               <div class="card-body">
-                <img src="" alt="" class="card-img-top" />
+                <img src="./assets/imgs/pic3.png" alt="" class="card-img-top" style="padding: 0" />
                 <h5 class="card-title">PET HEALTHCARE</h5>
                 <p class="card-text">In a professional context it often happens that private or corporate clients order a publication</p>
               </div>
@@ -243,7 +302,7 @@
           <div class="col-6 col-xl-4">
             <div class="card text-center card-service">
               <div class="card-body">
-                <img src="" alt="" class="card-img-top" />
+                <img src="./assets/imgs/pic4.jpg" alt="" class="card-img-top" style="padding: 0" />
                 <h5 class="card-title">DOG WALKING</h5>
                 <p class="card-text">Whether your pet needs a scratch around the ear, a face to lick or a place to play,</p>
               </div>
@@ -252,7 +311,7 @@
           <div class="col-6 col-xl-4">
             <div class="card text-center card-service">
               <div class="card-body">
-                <img src="" alt="" class="card-img-top" />
+                <img src="./assets/imgs/pic6.jpg" alt="" class="card-img-top" style="padding: 0" />
                 <h5 class="card-title">PET DAYCARE</h5>
                 <p class="card-text">Best Friends Pet Care is the leader of the pack when it comes to the absolute best care for your cat or dog.</p>
               </div>
@@ -262,7 +321,7 @@
           <div class="col-6 col-xl-4">
             <div class="card text-center card-service">
               <div class="card-body">
-                <img src="" alt="" class="card-img-top" />
+                <img src="./assets/imgs/pic7.jpg" alt="" class="card-img-top" style="padding: 0" />
                 <h5 class="card-title">NICE PRODUCT</h5>
                 <p class="card-text">In a professional context it often happens that private or corporate clients order a publication</p>
               </div>
@@ -434,35 +493,73 @@
         <div class="row">
           <div class="col-4 mt-5">
             <img src="./assets/imgs/mypet.png" />
+
             <p class="text-white">myPet was established in 2017 by Pet business veterans, Rod Davies and Matthew Levington, the journey began when founders Matthew Levington and Rod Davies, met up in 2017 over a beer</p>
-            <p class="text-white" style="letter-spacing: 40px">
-              <a style="text-decoration: none; color: white" href="#"><i class="hover-red fa-brands fa-facebook-f"></i> </a>
-              <a style="text-decoration: none; color: white" href="#"><i class="fa-brands fa-instagram hover-red"></i></a>
-              <a style="text-decoration: none; color: white" href="#"><i class="fa-brands fa-twitter hover-red"></i></a>
-              <a style="text-decoration: none; color: white" href="#"><i class="fa-solid fa-basketball hover-red"></i></a>
-            </p>
+            <div class="mt-5">
+              <p class="text-white" style="letter-spacing: 20px">
+                <a style="text-decoration: none; color: white" href="#"><i class="hover-red fa-brands fa-facebook-f"></i> </a>
+                <a style="text-decoration: none; color: white" href="#"><i class="fa-brands fa-instagram hover-red"></i></a>
+                <a style="text-decoration: none; color: white" href="#"><i class="fa-brands fa-twitter hover-red"></i></a>
+                <a style="text-decoration: none; color: white" href="#"><i class="fa-solid fa-basketball hover-red"></i></a>
+              </p>
+            </div>
+
             <br />
-            <span class="text-white px-2">
-              <a class="hover-red link" href="#">Privacy Policy</a>
-            </span>
-            <span class="text-white px-3" style="border-left: 1px solid grey">
-              <a class="hover-red link" href="">Legal Policy</a>
-            </span>
+            <div class="mt-3">
+              <span class="text-white px-2">
+                <a class="hover-red link" href="#">Privacy Policy</a>
+              </span>
+              <span class="text-white px-3" style="border-left: 1px solid grey">
+                <a class="hover-red link" href="">Legal Policy</a>
+              </span>
+            </div>
           </div>
           <div class="col-4 mt-5">
-            <p class="text-white importantlink">Important Links</p>
-            <div class="col-6">
-              <ul style="list-style-type: none">
-                <li><a href="#">Support</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Project</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Performance</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Pet Health Food</a></li>
-              </ul>
+            <p class="text-white importantlink ms-4">Important Links</p>
+            <div class="row">
+              <div class="col-6 mt-5" style="line-height: 40px">
+                <ul style="list-style-type: none">
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">About us</a></li>
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">Support</a></li>
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">Project</a></li>
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">Shop</a></li>
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">Performance</a></li>
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">News</a></li>
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">Pet Health Food</a></li>
+                </ul>
+              </div>
+              <div class="col-6 mt-5" style="line-height: 40px">
+                <ul style="list-style-type: none">
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">Pet</a></li>
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">Our History</a></li>
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">What we do</a></li>
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">Living areas</a></li>
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">Pet Product</a></li>
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">Contact Us</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="col-6"></div>
+          </div>
+          <div class="col-4 mt-5">
+            <div class="text-white importantlink2 ms-5">News Update</div>
+            <div class="mt-5 ms-5">
+              <a href="#" class="text-decoration-none hover-red"
+                ><p class="footer-white hover-red hover-red">
+                  Prefinished Solid Hardwood <br />
+                  Flooring
+                </p>
+                <p class="footer-grey">january 02,2017</p></a
+              >
+            </div>
+            <div class="mt-4 ms-5" style="padding-top: 20px; border-top: 1px solid grey">
+              <a href="#" class="text-decoration-none"
+                ><p class="footer-white hover-red">
+                  Latst pet care in summer 12 <br />
+                  care them well
+                </p>
+                <p class="footer-grey">january 07,2017</p></a
+              >
+            </div>
           </div>
         </div>
       </div>
