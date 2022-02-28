@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/e1a1eab11d.js" crossorigin="anonymous"></script>
+
+    <title>HOME PAGE</title>
+    <style>
+      .nav-link {
+        color: white;
+        text-decoration: none;
+      }
+
+      .carousel-item > img {
+        height: 550px;
+      }
+
+      .content {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        z-index: 99;
+        color: white;
+      }
+
+      .card-img-top {
+        width: 100%;
+        height: 200px;
+        padding: 50px 150px;
+      }
+
+      .card-service {
+        height: 336px;
+      }
+
+      .col {
+        padding: 0;
+      }
+
+      .cat {
+        padding: 50px 180px;
+      }
+
+      .header_servives::before {
+        content: "";
+        width: 5rem;
+        height: 5px;
+        background-color: red;
+        display: inline-block;
+        transform: translate(220%, -50px);
+      }
+
+      .background {
+        background-image: url(.//assets/imgs/background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+      }
+      .margin-top {
+        margin-top: 40%;
+      }
+      .flexcentre {
+        display: flex;
+        justify-content: center;
+      }
+      .header_servives1::before {
+        content: "";
+        width: 5rem;
+        height: 5px;
+        background-color: red;
+        display: inline-block;
+        transform: translate(190%, -50px);
+      }
+      .grey {
+        color: grey;
+      }
+      .link {
+        text-decoration: none;
+        color: white;
+      }
+      .hover-red:hover {
+        color: red;
+        transition: 0.5s;
+      }
+      .importantlink::after {
+        content: "";
+        width: 2rem;
+        height: 2px;
+        background-color: red;
+        display: inline-block;
+        transform: translate(-340%, 20px);
+      }
+      .importantlink2::after {
+        content: "";
+        width: 2rem;
+        height: 2px;
+        background-color: red;
+        display: inline-block;
+        transform: translate(-295%, 20px);
+      }
+      .footer-white {
+        color: #c0c0c0;
+      }
+      .footer-grey {
+        color: #ababab;
+      }
+      .black {
+        color: black;
+      }
+      .test {
+        position: relative;
+      }
+      .test::after {
+        content: "Hello";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        opacity: 0.4;
+        z-index: 1;
+      }
+      .blur {
+        opacity: 0.4;
+      }
+      .btn-outline-danger,
+      .btn-outline-primary {
+        font-weight: 900;
+        width: 150px;
+      }
+      .btn-outline-danger:hover,
+      .btn-outline-primary:hover {
+        transition: 0.5s;
+      }
+      .red {
+        color: red;
+      }
+      input {
+        box-sizing: border-box;
+        border: 3px solid rgb(5, 5, 5);
+        transition: 0.5s;
+        outline: none;
+        height: 50px;
+      }
+      input:focus {
+        border: 3px solid rgb(233, 233, 233);
+      }
+      .border-red:hover {
+        border: 1px solid red !important;
+        transition: 0.4s;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid bg-dark" style="height: 50px">
+      <div class="container bg-dark text-white d-flex">
+        <!-- Menu Left -->
+        <nav class="nav mt-2">
+          <a class="nav-link hover-red"><i class="fa-solid fa-house"></i> FoodFarm, W 35th St, New York</a>
+          <a class="nav-link hover-red"> <i class="fa-solid fa-envelope"></i> mypet_info@gmail.com</a>
+        </nav>
+        <!-- Menu Right -->
+        <ul class="nav ms-auto mt-2">
+          <li class="nav-item">
+            <a class="nav-link hover-red"><i class="fa-brands fa-facebook"></i> Facebook</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-red" href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-red" href="#"><i class="fa-brands fa-pinterest"></i> Pinterest</a>
+          </li>
+          <li class="nav-item" style="display: inline-block">
+            <a class="nav-link hover-red"> <i class="fa-brands fa-glide-g"></i> Gmail </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-fluid bg-white">
+      <div class="row">
+        <div class="col-3"><img class="ms-5 mt-2" src="./assets/imgs/mypet.png" alt="" /></div>
+        <div class="col-8 mt-4 d-flex justify-content-evenly">
+          <a href="#" class="hover-red text-decoration-none black" style="font-weight: bold">HOME</a>
+          <a href="#" class="hover-red text-decoration-none black" style="font-weight: bold">SERVICES</a>
+          <a href="#" class="hover-red text-decoration-none black" style="font-weight: bold">GALLERY</a>
+          <a href="#" class="hover-red text-decoration-none black" style="font-weight: bold">ABOUT</a>
+          <a href="#" class="hover-red text-decoration-none black" style="font-weight: bold">SHOP</a>
+          <a href="#" class="hover-red text-decoration-none black" style="font-weight: bold">BLOG</a>
+          <a href="#" class="hover-red text-decoration-none black" style="font-weight: bold">CONTACT</a>
+          <i class="fa-solid fa-cart-plus hover-red" style="font-size: 30px"></i>
+        </div>
+        <div class="col-1">
+          <a href="#"> <i class="fa-solid fa-magnifying-glass text-white bg-danger" style="padding: 20px 10px; font-size: 40px; margin: auto; font-weight: 600"></i> </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active test">
+            <img src="./assets/imgs/dog1.jpg" class="d-block w-100" />
+            <div class="content text-center">
+              <h1>Love your Pet, Care Pet</h1>
+              <h6>With over 15 years of Experience</h6>
+              <h3>Pet Care services and best quality Pet for your Home</h3>
+              <div>
+                <button class="btn btn-outline-danger btn-lg">Shop Now</button>
+                <button class="btn btn-outline-primary btn-lg">Get Pet</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item test">
+            <img src="./assets/imgs/dog2.jpg" class="d-block w-100" alt="..." />
+            <div class="content text-center">
+              <h1>Love your Pet, Care Pet</h1>
+              <h6>With over 15 years of Experience</h6>
+              <h3>Pet Care services and best quality Pet for your Home</h3>
+              <button class="btn btn-outline-danger btn-lg">Shop Now</button>
+              <button class="btn btn-outline-primary btn-lg">Get Pet</button>
+            </div>
+          </div>
+          <div class="carousel-item test">
+            <img src="./assets/imgs/dog3.jpg" class="d-block w-100" alt="..." />
+            <div class="content text-center">
+              <h1>Love your Pet, Care Pet</h1>
+              <h6>With over 15 years of Experience</h6>
+              <h3>Pet Care services and best quality Pet for your Home</h3>
+              <button class="btn btn-outline-danger btn-lg">Shop Now</button>
+              <button class="btn btn-outline-primary btn-lg">Get Pet</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-xl-4">
+          <div class="card text-center border-0">
+            <img src="./assets/imgs/egyptian cat.png" class="card-img-top cat" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Healthy Pet Care</h5>
+              <p class="card-text">we have 15 years of experience</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-4">
+          <div class="card bg-danger text-center border-0">
+            <img src="./assets/imgs/dogtraining.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Request for Services</h5>
+              <p class="card-text">Quality Pet Service</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-4">
+          <div class="card text-center border-0">
+            <img src="./assets/imgs/paw.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">$40 Off Purchase</h5>
+              <p class="card-text">$100 off OR Special financing!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col">
+          <hr class="text-danger" style="width: 80px; height: 5px" />
+          <h1>We are myPet</h1>
+          <p>Welcome! We are glad you would like to explore a different type of pet care for your furry friends. We have been providing top-notch pet sitting and pet care in the Littleton community since 1995 and the Best Choice as an alternative to pet boarding</p>
+          <p>There are many advantages of your pet staying in their own home. Some of them are; no exposure to illnesses such as kennel cough, canine flu, & parasites.</p>
+          <button class="btn bg-danger rounded-pill px-5 text-light">Know more</button>
+        </div>
+        <div class="col">
+          <img src="https://www.thesprucepets.com/thmb/sfuyyLvyUx636_Oq3Fw5_mt-PIc=/3760x2820/smart/filters:no_upscale()/adorable-white-pomeranian-puppy-spitz-921029690-5c8be25d46e0fb000172effe.jpg" alt="" class="w-100" />
+        </div>
+      </div>
+      <div class="container mt-5">
+        <h1 class="text-center header_servives">Our Pet Services</h1>
+        <p class="text-center">Best Friends Pet Care is the leader of the pack when it comes to the absolute best care for your cat or dog.</p>
+        <div class="row g-4">
+          <div class="col-6 col-xl-4">
+            <div class="card text-center card-service border-red hover-red">
+              <img src="./assets/imgs/pic1.jpg" class="card-img-top" style="padding: 0" />
+              <div class="card-body">
+                <h5 class="card-title text-danger">PET ADOPTION</h5>
+                <p class="card-text">Whether your pet needs a scratch around the ear, a face to lick or a place to play,</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-xl-4">
+            <div class="card text-center card-service border-red hover-red">
+              <img src="./assets/imgs/pic2.jpg" class="card-img-top" style="padding: 0" />
+              <div class="card-body">
+                <h5 class="card-title">PET GROOMING</h5>
+                <p class="card-text">Best Friends Pet Care is the leader of the pack when it comes to the absolute best care for your cat or dog.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-xl-4">
+            <div class="card text-center card-service border-red hover-red">
+              <div class="card-body">
+                <img src="./assets/imgs/pic3.png" alt="" class="card-img-top" style="padding: 0" />
+                <h5 class="card-title">PET HEALTHCARE</h5>
+                <p class="card-text">In a professional context it often happens that private or corporate clients order a publication</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-xl-4">
+            <div class="card text-center card-service border-red hover-red">
+              <div class="card-body">
+                <img src="./assets/imgs/pic4.jpg" alt="" class="card-img-top" style="padding: 0" />
+                <h5 class="card-title">DOG WALKING</h5>
+                <p class="card-text">Whether your pet needs a scratch around the ear, a face to lick or a place to play,</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-xl-4">
+            <div class="card text-center card-service border-red hover-red">
+              <div class="card-body">
+                <img src="./assets/imgs/pic6.jpg" alt="" class="card-img-top" style="padding: 0" />
+                <h5 class="card-title">PET DAYCARE</h5>
+                <p class="card-text">Best Friends Pet Care is the leader of the pack when it comes to the absolute best care for your cat or dog.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-xl-4">
+            <div class="card text-center card-service border-red hover-red">
+              <div class="card-body">
+                <img src="./assets/imgs/pic7.jpg" alt="" class="card-img-top" style="padding: 0" />
+                <h5 class="card-title">NICE PRODUCT</h5>
+                <p class="card-text">In a professional context it often happens that private or corporate clients order a publication</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid background">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="row margin-top">
+              <div class="col-5 align-self-center align-items-center flexcentre"><img src="./assets/imgs/handshake.png" alt="" /></div>
+              <div class="col-7">
+                <p class="text-light">Happy Customers</p>
+                <p class="text-light pacifio fs-2">210</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="row margin-top">
+              <div class="col-5 align-self-center align-items-center flexcentre"><img src="./assets/imgs/happiness.png" alt="" /></div>
+              <div class="col-7">
+                <p class="text-light">Customer Satisfaction</p>
+                <p class="text-light pacifio fs-2">100%</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="row margin-top">
+              <div class="col-5 align-self-center align-items-center flexcentre"><img src="./assets/imgs/house.png" alt="" /></div>
+              <div class="col-7">
+                <p class="text-light">Pet Hosted</p>
+                <p class="text-light pacifio fs-2">95</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="row margin-top">
+              <div class="col-5 align-self-center align-items-center flexcentre"><img src="./assets/imgs/medal.png" alt="" /></div>
+              <div class="col-7">
+                <p class="text-light">Awards Winning</p>
+                <p class="text-light pacifio fs-2">23</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col">
+          <h3>Our pet health care System</h3>
+          <p>The doctors and staff at Pet Care Veterinary Hospital have years of experience treating a variety of reptiles including Bearded Dragons, Geckos, Snakes and Tortoises. Our hospital offers physical exams, vaccinations, nutrition, behavioral and environmental enrichment information for your pet ferret.</p>
+          <div class="row">
+            <div class="col">
+              <img src="./assets/imgs/training.png" alt="" />
+              <br />
+              <h6>HOME DELIVERY</h6>
+            </div>
+            <div class="col">
+              <img src="./assets/imgs/cat2.png" alt="" />
+              <br />
+              <h6>QUALITY PET</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="row">
+            <h3>Doing the right thing, Discover Our Products</h3>
+            <p>Our veterinarians and staff understand the importance of the special bond you share with your pet and are dedicated to providing the best that modern veterinary care has to offer</p>
+          </div>
+          <div class="row mt-3 border-red" style="border: 1px dotted rgba(207, 111, 111, 0.479)">
+            <div style="display: flex; justify-content: space-between; padding: 15px">
+              <h3>Trusted Pet Sitters Across the Country</h3>
+              <div class="btn-class">
+                <button class="btn" id="btn1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample1" aria-expanded="false" aria-controls="collapseWidthExample1">
+                  <i class="fa-solid fa-circle-plus" style="color: red; background-color: white; font-size: 25px"></i>
+                </button>
+                <button class="btn" id="btn2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample1" aria-expanded="false" aria-controls="collapseWidthExample1"><i class="fa-solid fa-circle-minus" style="color: red; background-color: white; font-size: 25px"></i></button>
+              </div>
+            </div>
+            <div>
+              <div class="collapse collapse-horizontal" id="collapseWidthExample1">
+                <div class="card card-body" style="width: 100%">The perfect harmony between innovation and creativity, our bathroom tiles are produced in compliance with the international standards. High quality 20mm thick porcelain tiles that can be laid on pedestals,</div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3 border-red" style="border: 1px dotted rgba(207, 111, 111, 0.479)">
+            <div style="display: flex; justify-content: space-between; padding: 15px">
+              <h3>What can I offer my bird as a treat?</h3>
+              <div class="btn-class">
+                <button class="btn" id="btn3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample2">
+                  <i class="fa-solid fa-circle-plus" style="color: red; background-color: white; font-size: 25px"></i>
+                </button>
+                <button class="btn" id="btn4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample2"><i class="fa-solid fa-circle-minus" style="color: red; background-color: white; font-size: 25px"></i></button>
+              </div>
+            </div>
+            <div>
+              <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+                <div class="card card-body" style="width: 100%">The perfect harmony between innovation and creativity, our bathroom tiles are produced in compliance with the international standards. High quality 20mm thick porcelain tiles that can be laid on pedestals,</div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3 border-red" style="border: 1px dotted rgba(207, 111, 111, 0.479)">
+            <div style="display: flex; justify-content: space-between; padding: 15px">
+              <h3>When your rabbit stops eating</h3>
+              <div class="btn-class">
+                <button class="btn" id="btn5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample3" aria-expanded="false" aria-controls="collapseWidthExample3">
+                  <i class="fa-solid fa-circle-plus" style="color: red; background-color: white; font-size: 25px"></i>
+                </button>
+                <button class="btn" id="btn6" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample3" aria-expanded="false" aria-controls="collapseWidthExample3"><i class="fa-solid fa-circle-minus" style="color: red; background-color: white; font-size: 25px"></i></button>
+              </div>
+            </div>
+            <div>
+              <div class="collapse collapse-horizontal" id="collapseWidthExample3">
+                <div class="card card-body" style="width: 100%">The perfect harmony between innovation and creativity, our bathroom tiles are produced in compliance with the international standards. High quality 20mm thick porcelain tiles that can be laid on pedestals,</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <h1 class="text-center header_servives1 mt-5">Latest News</h1>
+          <div class="row gx-5">
+            <div class="col-4">
+              <div class="card border-red hover-red" style="width: 100%">
+                <img src="./assets/imgs/sunnydog.jpg" class="card-img-top p-0" style="height: 250px" />
+                <div class="card-body">
+                  <h5 class="card-title">Dogs Having The Summer Ever</h5>
+                  <p class="card-text grey">Summer is a time of vacations and travel or simply relaxing at home for a staycation As much as we would love for our dogs to accompany</p>
+                  <p class="card-text grey">13 /04 /17</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card border-red hover-red" style="width: 100%">
+                <img src="./assets/imgs/sad cat.jpg" class="card-img-top p-0" style="height: 250px" />
+                <div class="card-body">
+                  <h5 class="card-title hover-red">The cat feeling sad, when she was alone</h5>
+                  <p class="card-text grey">Summer is a time of vacations and travel or simply relaxing at home for a staycation As much as we would love for our dogs to accompany</p>
+                  <p class="card-text grey">15 /04 /17</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card border-red hover-red" style="width: 100%">
+                <img src="./assets/imgs/snowcat.jpg" class="card-img-top p-0" style="height: 250px" />
+                <div class="card-body">
+                  <h5 class="card-title hover-red">Cat Having nice moment the winter</h5>
+                  <p class="card-text grey">Summer is a time of vacations and travel or simply relaxing at home for a staycation As much as we would love for our dogs to accompany</p>
+                  <p class="card-text grey">19 /04 /17</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5 mb-5 d-flex align-items-center">
+            <div class="col-3 d-flex justify-content-center"><img src="./assets/imgs/logo1.png" alt="" /></div>
+            <div class="col-3 d-flex justify-content-center"><img src="./assets/imgs/logo2.png" alt="" /></div>
+            <div class="col-3 d-flex justify-content-center"><img src="./assets/imgs/logo3.png" alt="" /></div>
+            <div class="col-3 d-flex justify-content-center"><img src="./assets/imgs/logo4.png" alt="" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 mt-5">
+            <img src="./assets/imgs/mypet.png" />
+
+            <p class="text-white">myPet was established in 2017 by Pet business veterans, Rod Davies and Matthew Levington, the journey began when founders Matthew Levington and Rod Davies, met up in 2017 over a beer</p>
+            <div class="mt-5">
+              <p class="text-white" style="letter-spacing: 20px">
+                <a style="text-decoration: none; color: white" href="#"><i class="hover-red fa-brands fa-facebook-f"></i> </a>
+                <a style="text-decoration: none; color: white" href="#"><i class="fa-brands fa-instagram hover-red"></i></a>
+                <a style="text-decoration: none; color: white" href="#"><i class="fa-brands fa-twitter hover-red"></i></a>
+                <a style="text-decoration: none; color: white" href="#"><i class="fa-solid fa-basketball hover-red"></i></a>
+              </p>
+            </div>
+
+            <br />
+            <div class="mt-3">
+              <span class="text-white px-2">
+                <a class="hover-red link" href="#">Privacy Policy</a>
+              </span>
+              <span class="text-white px-3" style="border-left: 1px solid grey">
+                <a class="hover-red link" href="">Legal Policy</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-4 mt-5">
+            <p class="text-white importantlink ms-4">Important Links</p>
+            <div class="row">
+              <div class="col-6 mt-5" style="line-height: 40px">
+                <ul style="list-style-type: none">
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">About us</a></li>
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">Support</a></li>
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">Project</a></li>
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">Shop</a></li>
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">Performance</a></li>
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">News</a></li>
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">Pet Health Food</a></li>
+                </ul>
+              </div>
+              <div class="col-6 mt-5" style="line-height: 40px">
+                <ul style="list-style-type: none">
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">Pet</a></li>
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">Our History</a></li>
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">What we do</a></li>
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">Living areas</a></li>
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">Pet Product</a></li>
+                  <li><a class="footer-grey text-decoration-none hover-red" href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mt-5">
+            <div class="text-white importantlink2 ms-5">News Update</div>
+            <div class="mt-5 ms-5">
+              <a href="#" class="text-decoration-none hover-red"
+                ><p class="footer-white hover-red hover-red">
+                  Prefinished Solid Hardwood <br />
+                  Flooring
+                </p>
+                <p class="footer-grey">january 02,2017</p></a
+              >
+            </div>
+            <div class="mt-4 ms-5" style="padding-top: 20px; border-top: 1px solid grey">
+              <a href="#" class="text-decoration-none"
+                ><p class="footer-white hover-red">
+                  Latst pet care in summer 12 <br />
+                  care them well
+                </p>
+                <p class="footer-grey">january 07,2017</p></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-black" style="height: 100px">
+      <div class="row">
+        <div class="col ms-3 d-flex justify-content-center" style="margin-top: 40px">
+          <span class="text-white" style="font-size: 14px">Copyright &copy; 2017 <span class="red">myPet</span> All Rights Reserved by <span class="red">Unifytheme</span> </span>
+        </div>
+        <div class="col mt-4">
+          <div>
+            <input type="text" placeholder="your email" style="background-color: #2d2d2d; width: 420px; color: white" />
+            <div class="btn" style="margin-left: -130px; margin-top: -6px; background-color: orangered; color: white; width: 120px">Subscribe</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#btn2").hide();
+      $("#btn1").click(function () {
+        $("#btn2").show();
+        $("#btn1").hide();
+      });
+      $("#btn2").click(function () {
+        $("#btn1").show();
+        $("#btn2").hide();
+      });
+    });
+    $(document).ready(function () {
+      $("#btn4").hide();
+      $("#btn3").click(function () {
+        $("#btn4").show();
+        $("#btn3").hide();
+      });
+      $("#btn4").click(function () {
+        $("#btn3").show();
+        $("#btn4").hide();
+      });
+    });
+    $(document).ready(function () {
+      $("#btn6").hide();
+      $("#btn5").click(function () {
+        $("#btn6").show();
+        $("#btn5").hide();
+      });
+      $("#btn6").click(function () {
+        $("#btn5").show();
+        $("#btn6").hide();
+      });
+    });
+  </script>
+</html>
